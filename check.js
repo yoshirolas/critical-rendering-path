@@ -1,7 +1,7 @@
 const exec = require('child_process').exec;
 const psi = require('psi-local');
 
-const port = Math.round(Math.random() * 8500) + 1000;
+const port = Math.round(Math.random() * 1000) + 3000;
 const runServerScript = `http-server . -p ${port}`;
 const execProgram = exec(runServerScript);
 
